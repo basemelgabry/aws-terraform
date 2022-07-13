@@ -2,7 +2,7 @@
 
 # Installation 
 
-> clone 
+> git clone -b main https://github.com/basemelgabry/aws-terraform.git 
 
  > cd aws-infrastructure-s3-10722-az
 
