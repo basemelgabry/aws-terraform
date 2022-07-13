@@ -1,9 +1,29 @@
-# AWS ec2 state file ft for aws VPC infrastructure terraform
+## 1 – Create aws infrastructure 
+
+# Installation 
+
+> clone 
+> cd aws-infrastructure-s3-10722-az
+> terraform init
+> terraform plan
+> terraform apply - -auto-approve
 
 
-Changes to Outputs:
-  + subnet_id              = "subnet-09b48034b0db0580a"
-  + vpc_cidr_bock          = "10.11.0.0/16"
-  + vpc_id                 = "vpc-024037bf6f566188a"
-  + vpc_name               = "bass3vpc"
-  + vpc_security_group_ids = "sg-01cc31a5f0cf1c8e9"
+# output
+ -	VPC – RT – SG – IGW - 2 SUPNETS (different AZ) 
+ -	terraform.tfstate  in backend "s3"
+
+## 2 – Create EC2s attached to Target groups + Load Balancer
+
+> clone 
+> cd aws-ec2-s3-5722-user-data-az
+> terraform init
+> terraform plan
+> terraform apply - -auto-approve
+
+# output
+ - EC2 #1 = with Docker & nginx app => index.html 
+ - EC2 #2 = nginx app => index.html 
+ - Target groups
+ - Application Load Balancer
+
