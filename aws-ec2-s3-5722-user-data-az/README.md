@@ -23,9 +23,17 @@
 ## 2 – Create EC2s attached to Target groups + Load Balancer
 
 > clone 
+
+
 > cd aws-ec2-s3-5722-user-data-az
+
+
 > terraform init
+
+
 > terraform plan
+
+
 > terraform apply - -auto-approve
 
 # output
