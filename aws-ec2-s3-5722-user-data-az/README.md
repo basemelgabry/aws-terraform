@@ -5,7 +5,11 @@
 > clone 
 
  > cd aws-infrastructure-s3-10722-az
+
+
  > terraform init
+
+
  > terraform plan
 
 
